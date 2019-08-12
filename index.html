@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="A rotating nav menu template.">
+<meta name="keywords" content="HTML,CSS,JavaScript,jquery,document">
+<meta name="author" content="Steven Larner">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="mstyles.css" class="styles">
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<title>Rotating Nav Page</title>
+</head>
+<body>
+
+<!-- The circle navigation menu -->
+<table class="navwheel" cellspacing="0">
+	<tr>
+		<td class="first-peg"><div style="transform:rotateZ(180deg);"><i class="fas fa-user"></i></div></td>
+		<td class="second-peg"><div style="transform:rotateZ(-90deg);"><i class="fas fa-id-card"></i></div></td>
+	</tr>
+	<tr>
+		<td class="third-peg"><div style="transform:rotateZ(90deg);"><i class="fas fa-wrench"></i></div></td>
+		<td class="fourth-peg"><div style="transform:rotateZ(0deg);"><i class="fas fa-home"></i></div></td>
+	</tr>
+</table>
+
+<!-- The "pin" to the "wheel". This is literally a black circle -->
+<div class="navpin"></div>
+
+<!-- These are what make the black lines separating the colors. "ver" stands for "vertical", and "hor" stands for "horizontal" -->
+<div class="ver"></div>
+<div class="hor"></div>
+
+
+<!-- Just some sample text. Do what you want with it -->
+<div class="card-container">
+	<div class="card-one">
+		<div class="push"></div>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra augue sapien, ac accumsan lacus vulputate eleifend. Cras porta ex non nunc bibendum hendrerit ac non urna. Donec vel lectus est. Sed et bibendum diam. Nullam eget commodo nulla, malesuada gravida lectus. Phasellus cursus a nibh eu ultrices. Nam luctus dolor ac tristique hendrerit. Morbi semper sem ut auctor lacinia. Mauris sed lectus eget lectus dictum sollicitudin. Proin maximus quam eu velit venenatis tincidunt. Nulla facilisi. Aenean varius felis ipsum. Sed odio mi, dictum a fermentum vel, vestibulum ut est. Morbi suscipit est imperdiet lacus tincidunt, et auctor justo dapibus.</p>
+
+		<p>Nulla orci metus, pharetra ut ultricies sit amet, euismod vitae arcu. Proin ut imperdiet nunc. Mauris euismod ullamcorper ex. Duis gravida facilisis nibh, eget elementum magna aliquam a. Duis scelerisque turpis lectus, sed molestie lacus luctus id. Vestibulum non eleifend augue. Nunc leo dolor, pellentesque in tristique eu, bibendum et lorem. Maecenas ac nisl ultricies, ultricies sapien ut, sagittis nibh. Etiam justo nulla, dapibus nec nisl eu, varius lobortis mauris. Morbi id dignissim odio. Praesent iaculis molestie nibh. In finibus lobortis sapien porttitor vulputate. Nullam orci dolor, bibendum fringilla mauris et, suscipit convallis lectus. In sem lectus, auctor a leo vel, imperdiet maximus massa. Sed elementum nibh non turpis pharetra, sed tristique odio rhoncus. Proin tempor, quam ut maximus malesuada, eros ipsum dignissim risus, sit amet molestie nibh odio nec ante.</p>
+
+		<p>Proin luctus eros purus, ornare elementum erat aliquam id. In hendrerit pulvinar neque, ut faucibus turpis posuere at. Mauris eu nibh volutpat, fermentum metus in, faucibus erat. Duis libero dolor, imperdiet a aliquet vel, ultricies sit amet libero. Curabitur at aliquam orci, in rhoncus tortor. Aliquam massa sapien, auctor id bibendum ac, iaculis id ex. In at fermentum ante. Curabitur velit odio, ornare eu nisl at, feugiat efficitur mi. Nullam a facilisis arcu. Nunc vulputate nunc nibh. Duis consequat nibh elit, semper finibus augue imperdiet at. Pellentesque scelerisque sem felis, eget consequat turpis pulvinar vel. Vivamus eget felis ante. Quisque scelerisque accumsan orci eu facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris elementum porttitor lacus.</p>
+
+		<p>Duis at risus nisl. Integer sollicitudin quam quis nulla lacinia, eu hendrerit ex luctus. Etiam ac viverra nisl. Proin porttitor sollicitudin mi, non condimentum magna viverra eget. Nulla facilisi. Mauris ut est sapien. Quisque auctor quis massa et semper. Cras euismod mauris mattis enim facilisis dictum.</p>
+
+		<p>Fusce non nunc nec ligula imperdiet fringilla in eu tortor. Vivamus pulvinar vel velit vitae elementum. Vestibulum vel nunc erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc vitae purus et est consectetur rutrum. Nam tincidunt elit non dolor condimentum maximus. Vivamus sodales metus a nulla interdum elementum. Sed sollicitudin euismod rhoncus. Proin sed ligula id velit eleifend accumsan. Vivamus quis odio eget quam condimentum tristique. Vivamus non nulla justo. Phasellus consectetur, tortor posuere bibendum tempor, nisl nibh vestibulum leo, id malesuada metus sem sit amet augue.</p>
+		
+		<p>Nulla orci metus, pharetra ut ultricies sit amet, euismod vitae arcu. Proin ut imperdiet nunc. Mauris euismod ullamcorper ex. Duis gravida facilisis nibh, eget elementum magna aliquam a. Duis scelerisque turpis lectus, sed molestie lacus luctus id. Vestibulum non eleifend augue. Nunc leo dolor, pellentesque in tristique eu, bibendum et lorem. Maecenas ac nisl ultricies, ultricies sapien ut, sagittis nibh. Etiam justo nulla, dapibus nec nisl eu, varius lobortis mauris. Morbi id dignissim odio. Praesent iaculis molestie nibh. In finibus lobortis sapien porttitor vulputate. Nullam orci dolor, bibendum fringilla mauris et, suscipit convallis lectus. In sem lectus, auctor a leo vel, imperdiet maximus massa. Sed elementum nibh non turpis pharetra, sed tristique odio rhoncus. Proin tempor, quam ut maximus malesuada, eros ipsum dignissim risus, sit amet molestie nibh odio nec ante.</p>
+
+		<p>Proin luctus eros purus, ornare elementum erat aliquam id. In hendrerit pulvinar neque, ut faucibus turpis posuere at. Mauris eu nibh volutpat, fermentum metus in, faucibus erat. Duis libero dolor, imperdiet a aliquet vel, ultricies sit amet libero. Curabitur at aliquam orci, in rhoncus tortor. Aliquam massa sapien, auctor id bibendum ac, iaculis id ex. In at fermentum ante. Curabitur velit odio, ornare eu nisl at, feugiat efficitur mi. Nullam a facilisis arcu. Nunc vulputate nunc nibh. Duis consequat nibh elit, semper finibus augue imperdiet at. Pellentesque scelerisque sem felis, eget consequat turpis pulvinar vel. Vivamus eget felis ante. Quisque scelerisque accumsan orci eu facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris elementum porttitor lacus.</p>
+
+		<p>Fusce non nunc nec ligula imperdiet fringilla in eu tortor. Vivamus pulvinar vel velit vitae elementum. Vestibulum vel nunc erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc vitae purus et est consectetur rutrum. Nam tincidunt elit non dolor condimentum maximus. Vivamus sodales metus a nulla interdum elementum. Sed sollicitudin euismod rhoncus. Proin sed ligula id velit eleifend accumsan. Vivamus quis odio eget quam condimentum tristique. Vivamus non nulla justo. Phasellus consectetur, tortor posuere bibendum tempor, nisl nibh vestibulum leo, id malesuada metus sem sit amet augue.</p>
+		
+		<p>Nulla orci metus, pharetra ut ultricies sit amet, euismod vitae arcu. Proin ut imperdiet nunc. Mauris euismod ullamcorper ex. Duis gravida facilisis nibh, eget elementum magna aliquam a. Duis scelerisque turpis lectus, sed molestie lacus luctus id. Vestibulum non eleifend augue. Nunc leo dolor, pellentesque in tristique eu, bibendum et lorem. Maecenas ac nisl ultricies, ultricies sapien ut, sagittis nibh. Etiam justo nulla, dapibus nec nisl eu, varius lobortis mauris. Morbi id dignissim odio. Praesent iaculis molestie nibh. In finibus lobortis sapien porttitor vulputate. Nullam orci dolor, bibendum fringilla mauris et, suscipit convallis lectus. In sem lectus, auctor a leo vel, imperdiet maximus massa. Sed elementum nibh non turpis pharetra, sed tristique odio rhoncus. Proin tempor, quam ut maximus malesuada, eros ipsum dignissim risus, sit amet molestie nibh odio nec ante.</p>
+
+		<p>Proin luctus eros purus, ornare elementum erat aliquam id. In hendrerit pulvinar neque, ut faucibus turpis posuere at. Mauris eu nibh volutpat, fermentum metus in, faucibus erat. Duis libero dolor, imperdiet a aliquet vel, ultricies sit amet libero. Curabitur at aliquam orci, in rhoncus tortor. Aliquam massa sapien, auctor id bibendum ac, iaculis id ex. In at fermentum ante. Curabitur velit odio, ornare eu nisl at, feugiat efficitur mi. Nullam a facilisis arcu. Nunc vulputate nunc nibh. Duis consequat nibh elit, semper finibus augue imperdiet at. Pellentesque scelerisque sem felis, eget consequat turpis pulvinar vel. Vivamus eget felis ante. Quisque scelerisque accumsan orci eu facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris elementum porttitor lacus.</p>
+	</div>
+</div>
+
+<!-- I figure everyone has their own way to link to their js files, so just move this if you want to. Or leave it here. -->
+<script>
+/* Feel free to use this. I made desktop end up using mobile styles but you can still change it if you want
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	$(".styles").attr("href", "mstyles.css");
+}
+else {
+	$(".styles").attr("href", "styles.css");
+}
+*/
+
+// The fourth peg is set to "1" because by default, it is on
+var fourthPeg = 1;
+var thirdPeg = 0;
+var secondPeg = 0;
+var firstPeg = 0;
+var turnVal = 0;
+
+function rotateRight() {
+	turnVal = turnVal + 90;
+	$(".navwheel").attr("style", "transform:rotateZ(" + turnVal + "deg);");
+}
+function rotateLeft() {
+	turnVal = turnVal - 90;
+	$(".navwheel").attr("style", "transform:rotateZ(" + turnVal + "deg);");
+}
+
+// When the user clicks on the fourth peg, this function resets the values of all peg variables, sets the fourth peg variable value to "1", then waits 500 miliseconds before running the function "checkVal()", which sets up all future pegs to use the correct rotation direction
+$(".fourth-peg").mousedown(function() {
+	resetVal();
+	fourthPeg = 1;
+	setTimeout(function() {
+		checkVal();
+	}, 500);
+});
+$(".third-peg").mousedown(function() {
+	resetVal();
+	thirdPeg = 1;
+	setTimeout(function() {
+		checkVal();
+	}, 500);
+});
+$(".second-peg").mousedown(function() {
+	resetVal();
+	secondPeg = 1;
+	setTimeout(function() {
+		checkVal();
+	}, 500);
+});
+$(".first-peg").mousedown(function() {
+	resetVal();
+	firstPeg = 1;
+	setTimeout(function() {
+		checkVal();
+	}, 500);
+});
+
+// Resets all peg values
+function resetVal() {
+	fourthPeg = 0;
+	thirdPeg = 0;
+	secondPeg = 0;
+	firstPeg = 0;
+}
+function checkVal() {
+	// if the fourth peg is on, this statement runs but if the fourth peg is off, the function continues until it finds the peg that is on
+	if (fourthPeg === 1) { // red peg
+		// removes all click functions from the first and fourth peg
+		$(".first-peg,.fourth-peg").attr("onmousedown", "");
+		
+		// sets up the correct rotation click functions
+		$(".second-peg").attr("onmousedown", "rotateRight()");
+		$(".third-peg").attr("onmousedown", "rotateLeft()");
+		
+		// sets the sample text background to red
+		$(".card-one").attr("style", "background-color:#B0233F;");
+	}
+	else if (secondPeg === 1) { // green peg
+		$(".second-peg,.third-peg,.first-peg,.fourth-peg").attr("onmousedown", "");
+		
+		$(".first-peg").attr("onmousedown", "rotateRight()");
+		$(".fourth-peg").attr("onmousedown", "rotateLeft()");
+		
+		$(".card-one").attr("style", "background-color:#008500;");
+	}
+	else if (firstPeg === 1) { // blue peg
+		$(".second-peg,.third-peg,.first-peg,.fourth-peg").attr("onmousedown", "");
+		
+		$(".third-peg").attr("onmousedown", "rotateRight()");
+		$(".second-peg").attr("onmousedown", "rotateLeft()");
+		
+		$(".card-one").attr("style", "background-color:#2A5A91;");
+	}
+	else if (thirdPeg === 1) { // yellow peg
+		$(".second-peg,.third-peg,.first-peg,.fourth-peg").attr("onmousedown", "");
+		
+		$(".fourth-peg").attr("onmousedown", "rotateRight()");
+		$(".first-peg").attr("onmousedown", "rotateLeft()");
+		
+		$(".card-one").attr("style", "background-color:#A89D00;");
+	}
+}
+
+// This runs the second the document loads. It makes sure that every value is at it should be, and updated correctly
+checkVal();
+resetVal();
+
+// Every time the user clicks on the document, this function will run. It will post to the console the values of each peg, and the turn value
+$(document).click(function() {
+	console.log("fourth " + fourthPeg + " first " + firstPeg + " second " + secondPeg + " third " + thirdPeg + " TurnVal " + turnVal);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* basically makes it so that the document fits the whole screen */
+html {
+	height:100%;
+	width:100%;
+}
+body {
+	margin:0;
+	padding:0;
+	background-color:black;
+}
+
+/* the black circle in the center of the circle nav */
+.navpin {
+	z-index:2;
+	position:fixed;
+	top:-20px;
+	left:-20px;
+	height:110px;
+	width:110px;
+	border-radius:50%;
+	background-color:black;
+}
+
+/* the circle nav manu */
+.navwheel {
+	z-index:1;
+	position:fixed;
+	top:-220px;
+	left:-220px;
+	border-radius:50%;
+	border:black 10px solid;
+	transition:1s;
+}
+
+/* targets all Table Data elements inside the nav menu */
+.navwheel td {
+	width:245px;
+	height:245px;
+	text-align:center;
+	cursor:pointer;
+	color:white;
+	text-decoration:none;
+	font-size:60px;
+}
+
+/* these are the black lines that separate the colors in the nav menu */
+.ver {width:20px;height:290px;position:fixed;top:0;left:27px;background:black;z-index:2;}
+.hor {height:20px;width:290px;position:fixed;left:0;top:27px;background:black;z-index:2;}
+
+/* This is so that you can change the colors without changing a whole bunch of classes or ids. Everything is set up through "tr:first-child" and stuff. To make it easier to read, you can also just change them to ".first-peg" if you want */
+.navwheel tr:first-child td:first-child { /* top left (blue) */
+	border-radius:100% 0 0 0;
+	background-color:#4797F5;
+}
+.navwheel tr:first-child td:last-child { /* top right (green) */
+	border-radius:0 100% 0 0;
+	background-color:#8EF900;
+}
+.navwheel tr:last-child td:first-child { /* bottom left (yellow) */
+	border-radius:0 0 0 100%;
+	background-color:#FFEC58;
+}
+.navwheel tr:last-child td:last-child { /* bottom right (red) */
+	border-radius:0 0 100% 0;
+	background-color:#F54755;
+}
+
+
+/* This is to set up the text wrap around in the sample text. You can get rid of everything below this line if you only care about the nav menu */
+.push {
+	float:left;
+	clear:right;
+	height:260px;
+	width:260px;
+	shape-outside: ellipse(270px 170px at 10% 34%);
+}
+.card-container {
+	color:white;
+	overflow:hidden;
+	margin:15px;
+	transition:0.3s;
+}
+.card-container div {
+	border-radius:20px;
+	padding:10px;
+	transition:0.3s;
+}
