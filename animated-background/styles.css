@@ -1,0 +1,29 @@
+body {
+	padding:0;
+	margin:0;
+	overflow:hidden;
+}
+.stripe {
+	background:linear-gradient(0deg, #000, transparent), repeating-linear-gradient(45deg, #192670 0%, #192670 1%, transparent 1%, transparent 2%),#356FCC repeating-linear-gradient(-45deg, rgba(25, 38, 112, 0.5) 0%, rgba(25, 38, 112, 0.5) 1%, transparent 1%, transparent 2%);
+	height:300vh;
+	width:300vw;
+	transition:15s ease-in-out;
+	position:fixed;
+	top:0;
+	left:0;
+}
+.anim {
+	margin-top:-50vh;
+	margin-left:-50vw;
+}
+.content {
+	background-color:white;
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	border-radius:20px;
+	padding:10px 20px;
+	font-size:20px;
+	text-align:center;
+}
